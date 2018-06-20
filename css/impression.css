@@ -1,0 +1,90 @@
+
+/*
+		print view
+		############
+		 _________
+		|         | 
+		|         | 
+		|         | 
+		|         | 
+		|         | 
+		| A4      | 
+      |_________|
+*/
+/*    
+		# d-view
+		
+		This is the main view
+		it's focused on the 3d model.
+
+*/
+	body
+{
+			display: block;
+			overflow: auto;
+		z-index: 0;
+		opacity: 1.0;
+	}
+	
+	#renderbox {
+			display: none;
+		z-index: 0;
+		opacity: 0.0;
+	}
+	#dispatcher-dialog
+	{
+		display: none;
+		z-index: 0;
+		opacity: 0.0;
+	}
+	#main-app-dialog-info p
+	{
+		display: none;
+		z-index: 0;
+		opacity: 0.0;
+	}
+	#main-app-dialog-info
+	{
+		display: none;
+		z-index: 0;
+		opacity: 0.0;
+	}
+	#main-app-dialog
+	{
+		display: none;
+		z-index: 0;
+		opacity: 0.0;
+	}
+	#main-app-dialog-title
+	{
+		display: none;
+		z-index: 0;
+		opacity: 0.0;
+	}
+	#scratch-message {
+		display: none;
+		z-index: 0;
+		opacity: 0.0;
+	}
+	#menu {
+		display: none;
+		z-index: 0;
+		opacity: 0.0;
+
+	}
+	#svg7 {
+
+		display: block;
+		opacity: 1.0;
+		background-color: #fff;
+		color: #444;
+		position: fixed;
+		z-index: 2;
+		top: 0px !important;
+		left: 0px !important;
+		width: 210mm !important;
+		height: 297mm !important;
+		border: 1px solid;
+	}
+	#settings { display: none; }
+

@@ -1,0 +1,263 @@
+/*
+	this file is a part of 
+	papier 0.4.1
+		
+	Author : Saint Pierre Thomas
+	If you got interest in such kind of app
+	feel free to contact me at spierro@free.fr
+	Licenced under the termes of the GNU GPL v3
+*/
+.logo-text
+{
+	fill: #fff;
+	opacity: 1.0;
+}
+.flatshape {
+	fill: #444;
+	opacity: 1.0;
+	stroke: #666;
+	stroke-width: .91px;
+	stroke-linejoin: bevel;
+}
+.nodeshape {
+	fill: #8880;
+	opacity: 1.0;
+	stroke: #777;
+	stroke-width: 2px;
+	stroke-linejoin: bevel;
+}
+#cantstart
+{		
+	position: relative;
+
+color: rgb(200, 0,0);
+		text-align: center;
+top:80vh;
+
+}
+#startscreen
+{	
+	background-color: #fff;
+	color: #000;
+
+	position: absolute;
+	z-index: 100;
+	width: 100vw;
+	height: 100vh;
+	top: 0px;
+	left: 0px;
+
+
+}  
+	#thirdpartcode
+	{
+		font-family: monospace, monospace;
+		position: relative;
+		top: 95vh;
+		text-align: center;
+	}
+#credits p {
+	font-size: 1em;
+	padding: 0.2em;
+	margin: 0px
+}
+body {
+	background-color: #444;
+	color: #eee;
+}
+#settings {
+	background-color: #222d;
+	color: #bbb;
+}
+#settings h1, h2, h3, h4
+{
+
+	color: #fff;
+}
+#svg7 {
+		
+		background-color: #222;
+		color: #eee;
+}
+	#renderbox {
+
+		/* Chrome10-25,Safari5.1-6 */
+		background: -webkit-radial-gradient(center, ellipse cover, #333 0%, #000 100%);
+		/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		background: radial-gradient(ellipse at center, #333 0%, #000 100%);
+	}
+.alert-warning
+{
+		
+		background-color: #222;
+		color: #eee;
+		border: 5px solid orange;
+}
+.alert-danger
+	{
+		
+		background-color: #222;
+		color: #eee;
+		border: 5px solid red;
+}
+	
+.noselect {
+	-webkit-touch-callout: none;
+	/* iOS Safari */
+	-webkit-user-select: none;
+	/* Safari */
+	-khtml-user-select: none;
+	/* Konqueror HTML */
+	-moz-user-select: none;
+	/* Firefox */
+	-ms-user-select: none;
+	/* Internet Explorer/Edge */
+	user-select: none;
+	/* Non-prefixed version, currently supported by Chrome and Opera */
+}
+@media (max-aspect-ratio: 1/1) {
+	#thirdpartcode
+	{
+		font-family: monospace, monospace;
+		position: relative;
+		top: 90vh;
+		text-align: center;
+	}
+	#startapp
+	{
+		position: absolute;
+		top: 70vh;
+		left: 35vw;
+		width: 30vw;
+		height: auto;
+
+	/*display:none;
+	*/
+	}#startlogo
+	{
+		position: absolute;
+		top: 10vh;
+		left: 30vw;
+		width: 40vw;
+		height: auto;
+	}
+	#settings {
+		overflow-x: hide;
+		overflow-y: scroll;
+		padding-top: 1em;
+		;
+		position: absolute;
+		z-index: 15;
+		width: 100vw;
+		height: 100vh;
+		top: 0px;
+		left: 0px;
+	}
+	#credits {
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		color: #222;
+		z-index: 10;
+		width: 100vw;
+	}
+	#scratch-message {
+		position: fixed;
+		top: calc(100vh - 70.7vw);
+		left: 0px;
+		color: #222;
+		z-index: 4;
+		width: 100vw;
+	}
+	#svg7 {
+		position: fixed;
+		z-index: 2;
+		bottom: 0px;
+		left: 0px;
+		width: 100vw;
+		height: 70.7vw;
+	}
+	#renderbox {
+		position: fixed;
+		z-index: 1;
+		width: 100vw;
+		height: calc(100vh - 70.7vw);
+		top: 0px;
+		right: 0px;
+	}
+}
+@media (min-aspect-ratio: 1/1) {
+	#startapp
+	{
+		position: absolute;
+		top: 70vh;
+		left: 40vw;
+		width: 20vw;
+		height: auto;
+	 display: none;
+
+
+	/*display:none;
+	*/
+	}#startlogo
+	{
+		position: absolute;
+		top: 10vh;
+		left: 40vw;
+		width: 20vw;
+		height: auto;
+	}
+	#settings {
+		overflow-x: hide;
+		overflow-y: scroll;
+		padding-top: 1em;
+		;
+		position: absolute;
+		z-index: 15;
+		width: calc(100vw - 70.7vh);
+		height: 100vh;
+		top: 0px;
+		right: 0px;
+	}
+	#credits {
+		position: fixed;
+		top: 0px;
+		right: 0px;
+		color: #222;
+		z-index: 4;
+		width: calc(100vw - 70.7vh);
+	}
+	#scratch-message {
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		color: #222;
+		z-index: 4;
+		width: 70.7vh;
+	}
+	#svg7 {
+		position: fixed;
+		z-index: 2;
+		top: 0px;
+		left: 0px;
+		width: 70.7vh;
+		height: 100vh;
+	}
+	#renderbox {
+		position: fixed;
+		z-index: 1;
+		width: calc(100vw - 70.7vh);
+		height: 100vh;
+		top: 0px;
+		right: 0px;
+	}
+}
+/*
+	this file is a part of 
+	papier 0.4.1
+		
+	Author : Saint Pierre Thomas
+	If you got interest in such kind of app
+	feel free to contact me at spierro@protonmail.fr
+	Licenced under the termes of the GNU GPL v3
+*/
